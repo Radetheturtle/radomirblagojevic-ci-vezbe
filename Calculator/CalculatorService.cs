@@ -27,5 +27,10 @@ namespace Calculator
         {
             return a * b;
         }
+
+        public double SquareRoot(int a)
+        {
+            return Math.Sqrt(a);
+        }
     }
 }

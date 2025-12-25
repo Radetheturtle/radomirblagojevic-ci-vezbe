@@ -35,4 +35,12 @@ public class CalculatorServiceTests
         Assert.Equal(15, result);
 
     }
+
+    [Fact]
+    public void Sqrt_returnCorrectResult()
+    {
+        var result = _calculator.SquareRoot(9);
+        Assert.Equal(4, result);
+
+    }
 }
