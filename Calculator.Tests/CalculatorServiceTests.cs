@@ -29,10 +29,10 @@ public class CalculatorServiceTests
     }
 
     [Fact]
-    public void Mulitply_ThrowsException()
+    public void Mulitply_returnCorrectResult()
     {
-        Assert.Throws<DivideByZeroException>(() =>
-            _calculator.Multiply(10, 5));
+        var result = _calculator.Multiply(5, 3);
+        Assert.Equal(15, result);
 
     }
 }
