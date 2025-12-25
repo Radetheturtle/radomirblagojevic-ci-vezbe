@@ -27,4 +27,12 @@ public class CalculatorServiceTests
             _calculator.Divide(10, 0));
        
     }
+
+    [Fact]
+    public void Mulitply_ThrowsException()
+    {
+        Assert.Throws<DivideByZeroException>(() =>
+            _calculator.Multiply(10, 5));
+
+    }
 }
