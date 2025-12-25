@@ -40,7 +40,7 @@ public class CalculatorServiceTests
     public void Sqrt_returnCorrectResult()
     {
         var result = _calculator.SquareRoot(9);
-        Assert.Equal(4, result);
+        Assert.Equal(3, result);
 
     }
 }
